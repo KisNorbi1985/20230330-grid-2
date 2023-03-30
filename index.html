@@ -26,6 +26,17 @@
         .container>div:nth-child(2n-1){
             background: #ccc;
         }
+        /*inner belső grid(grid a gridben)*/
+        .inner {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap:.5em ;
+        }
+        /*inner elemben található divek*/
+        .inner > div {
+            border: 1px solid deepskyblue;
+            padding: 0.5em;
+        }
     </style>
 </head>
 <body>
@@ -36,7 +47,16 @@
         <div>Voluptates quasi libero vitae aperiam.</div>
         <div>Vitae laborum cumque rerum ab.</div>
         <div>Omnis nulla voluptatum vero maxime?</div>
-        <div>Quam ex nesciunt inventore. Animi!</div>
+        <div class="inner">
+            <div>Lorem, ipsum.</div>
+            <div>Id, dolores!</div>
+            <div>Itaque, explicabo.</div>
+            <div>Ducimus, a!</div>
+            <div>Eligendi, cupiditate!</div>
+            <div>Earum, quasi.</div>
+            <div>Exercitationem, sint.</div>
+            <div>Facilis, debitis!</div>
+        </div>
         <div>Natus porro iste velit. Perferendis.</div>
         <div>Id fugit et odio? Iure!</div>
         <div>Asperiores voluptatibus voluptas recusandae quo?</div>
